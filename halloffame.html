@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+</head>
+<body bgcolor="906cba">
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Header styling */
+    .header {
+      background-color: #8C4D83; /* Purple background */
+      color: white;             /* White text color */
+      padding: 15px;            /* Spacing inside the header */
+      text-align: center;       /* Center the text */
+    }
+
+    /* Navigation links styling */
+    .nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;   /* Dark background for nav */
+    }
+
+    .nav a {
+      color: white;             /* White text */
+      padding: 14px 20px;       /* Padding for nav links */
+      text-decoration: none;    /* Remove underline */
+      text-transform: uppercase;/* Uppercase text */
+    }
+
+    .nav a:hover {
+      background-color: #1A1A1A;/* Hover effect */
+    }
+    .fa {
+      padding: 5px;
+      font-size: 20px;
+      width: 20px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+  
+    }
+</style>
+</head>
+<body>
+<!-- Header Section -->
+  <div class="header">
+    <h1>DIDI's Website</h1>
+    <p>WELCOME TO DIDILAND!!</p>
+
+  </div>
+</style>
+</head>
+<body>
+
+    
+  </div>
+
+  <!-- Navigation Bar -->
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="myself.html">Myself</a>
+    <a href="family.html">Family</a>
+    <a href="friends.html">Friends</a>
+    <a href="hallofFame.html">Hall of Fame</a>
+    <a href="favourite.html">Favorite</a>
+    <a href="education.html">Education</a>
+  </div><a href="top"></a>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="Gambar/gambar1.jpg" style="width:20%">
+    <img src="Gambar/gambar2.jpg" style="width:20%">
+    <img src="Gambar/gambar4.jpg" style="width:30%">
+    <img src="Gambar/gambar14.jpg" style="width:20%">
+    <img src="Gambar/gambar5.jpg" style="width:40%">
+    <img src="Gambar/gambar7.jpg" style="width:20%">
+    <img src="Gambar/gambar9.jpg" style="width:25%">
+    <img src="Gambar/gambar10.jpg" style="width:20%">
+    <img src="Gambar/gambar12.jpg" style="width:35%">
+    <img src="Gambar/baby.jpg" style="width:30%"
+  </div>
+  <div class="column">
+    <img src="Gambar/gambar8.jpg" style="width:20%">
+    <img src="Gambar/gambar11.jpg" style="width:20%">
+    <img src="Gambar/gambar29.jpg" style="width:30%">
+    <img src="Gambar/gambar28.jpg" style="width:20%">
+    <img src="Gambar/gambar39.jpg" style="width:40%">
+    <img src="Gambar/Ma&abah.jpg" style="width:20%">
+    <img src="Gambar/gambar35.jpg" style="width:25%">
+    <img src="Gambar/gambar31.jpg" style="width:20%">
+    <img src="Gambar/gambar42.jpg" style="width:35%">
+    <img src="Gambar/gambar41.jpg" style="width:30%"> 
+  </div>
+  <div class="column">
+    <img src="Gambar/gambar18.jpg" style="width:20%">
+    <img src="Gambar/gambar32.jpg" style="width:20%">
+    <img src="Gambar/gambar21.jpg" style="width:30%">
+    <img src="Gambar/gambar47.jpg" style="width:20%">
+    <img src="Gambar/gambar44.jpg" style="width:40%">
+    <img src="Gambar/gambar40.jpg" style="width:30%">
+    <img src="Gambar/gambar48.jpg" style="width:25%">
+    <img src="Gambar/gambar37.jpg" style="width:45%">
+    <img src="Gambar/gambar38.jpg" style="width:35%">
+    <img src="Gambar/gambar24.jpg" style="width:30%"
+  </div>
+  
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<a href="#top"><img src="image/top.png"></a>
+<div id="bottom" class="centered">
+</body>
+</html>
